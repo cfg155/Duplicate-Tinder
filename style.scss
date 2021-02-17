@@ -14,6 +14,7 @@ html {
 
 $pink : #FD297B;
 $orange : #FF7555;
+$grey : #979898;
 
 .header {
     background-image: url('asset/banner-img.png');
@@ -46,15 +47,18 @@ $orange : #FF7555;
     align-items: center;
     padding: 1.2em;
     box-sizing: border-box;
+    position: fixed;
 }
 .banner {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    width: 100%;
-    height: 75vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .banner h1 {
@@ -71,6 +75,7 @@ $orange : #FF7555;
 
 .banner h1 {
     color: white;
+    margin-bottom: 1.2em;
 }
 
 .right-header {
@@ -123,7 +128,7 @@ button {
 }
 
 .footer {
-    width: 50%;
+    width: 75%;
     margin: auto;
 }
 
@@ -131,6 +136,11 @@ li,a {
     text-decoration: none;
     list-style: none;
     color: black;
+}
+
+.swiper-container {
+    width: 50%;
+    height: 20vh;
 }
 
 .footer-top {
@@ -142,7 +152,8 @@ li,a {
 
 .footer-top .title {
     padding: 1.5em 0;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-style: italic;
 }
 
 .footer-top ul li a{
@@ -161,9 +172,9 @@ li,a {
 
 .footer-middle-left {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 40%;
+    width: 30%;
 }
 
 .footer-middle-right , .footer-middle-right ul {
@@ -187,6 +198,8 @@ li,a {
 .para {
     padding: .5em 0;
     font-size: .9em;
+    color: $grey;
+    line-height: 1.3em;
 }
 
 .last-bottom {
@@ -195,4 +208,5 @@ li,a {
     padding-top: .8em;
     height: 5vh;
     font-size: 0.75rem;
+    color: $grey;
 }
