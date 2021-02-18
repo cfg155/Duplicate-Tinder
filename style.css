@@ -154,6 +154,25 @@ button {
   color: white;
 }
 
+.swiper-container {
+  width: 95%;
+}
+
+.card {
+  padding: 1.5em;
+  border: 1px solid black;
+  border-radius: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 90%;
+  margin: 1.4em 1em;
+  font-size: 1rem;
+}
+
+#line {
+  margin: 1em 0;
+}
+
 .footer {
   width: 75%;
   margin: auto;
@@ -163,11 +182,6 @@ li, a {
   text-decoration: none;
   list-style: none;
   color: black;
-}
-
-.swiper-container {
-  width: 50%;
-  height: 20vh;
 }
 
 .footer-top {

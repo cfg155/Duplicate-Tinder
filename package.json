@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "watchify ./swiperjs.js -o ./dist/bundle.js -t babelify -d -v",
+    "separate" : "browserify ./swiperjs.js -x swiper > ./dist/bundle.js -t babelify"
   },
   "repository": {
     "type": "git",
