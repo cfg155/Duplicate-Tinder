@@ -278,7 +278,9 @@
     var headerWrapper = document.querySelector('.header-wrapper')
     var headerWrapperHeight = headerWrapper.clientHeight
 
-    window.addEventListener('scroll',() => {
+    var banner = document.querySelector('.banner')
+
+    var movingHeader = () => {
         var headerWindowZone = headerBottomVal - headerWrapperHeight
 
         if(window.scrollY > headerWindowZone){
@@ -288,6 +290,24 @@
             headerWrapper.style.position = 'fixed'
             headerWrapper.style.removeProperty('top')
         }
+    }
+
+    var bannerFadeOut = () => {
+        let fading = 1000 - (window.scrollY*2.8) 
+        let opacityVal = fading / 1000
+        banner.style.opacity = opacityVal
+
+        if(opacityVal < 0){
+            banner.style.visibility = 'hidden'
+        }else{
+            banner.style.visibility = 'visible'
+        }
+    }
+
+    window.addEventListener('scroll',() => {
+        movingHeader()
+
+        bannerFadeOut()
     })
 </script>
 
