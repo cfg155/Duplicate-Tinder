@@ -110,12 +110,29 @@ button {
     padding: 0 10px;
 }
 
+.btn-icon i svg {
+    fill: white;
+}
+
+.btn-icon:hover {
+    color: $pink;
+}
+
+.btn-icon:hover i svg {
+    fill: $pink;
+}
+
 .btn-log{
     padding: .8em 2em;
     border-radius: 10px;
     font-size: 16px;
     color: $pink;
     background-color: white;
+}
+
+.btn-log:hover {
+    background-image: linear-gradient(to right, rgba($pink,1),rgba($orange,1));
+    color: white;
 }
 
 .btn-ca {
@@ -125,6 +142,10 @@ button {
     border-radius: 50px;
     background-image: linear-gradient(to right, rgba($pink,1),rgba($orange,1));
     color: white;
+}
+
+.btn-ca:hover {
+    background-image: linear-gradient(to left,rgba($pink,1),rgba($orange,.8));
 }
 
 .swiper-container {

@@ -136,12 +136,30 @@ button {
   padding: 0 10px;
 }
 
+.btn-icon i svg {
+  fill: white;
+}
+
+.btn-icon:hover {
+  color: #FD297B;
+}
+
+.btn-icon:hover i svg {
+  fill: #FD297B;
+}
+
 .btn-log {
   padding: .8em 2em;
   border-radius: 10px;
   font-size: 16px;
   color: #FD297B;
   background-color: white;
+}
+
+.btn-log:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fd297b), to(#ff7555));
+  background-image: linear-gradient(to right, #fd297b, #ff7555);
+  color: white;
 }
 
 .btn-ca {
@@ -152,6 +170,11 @@ button {
   background-image: -webkit-gradient(linear, left top, right top, from(#fd297b), to(#ff7555));
   background-image: linear-gradient(to right, #fd297b, #ff7555);
   color: white;
+}
+
+.btn-ca:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#fd297b), to(rgba(255, 117, 85, 0.8)));
+  background-image: linear-gradient(to left, #fd297b, rgba(255, 117, 85, 0.8));
 }
 
 .swiper-container {
