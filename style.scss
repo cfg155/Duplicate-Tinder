@@ -6,6 +6,7 @@
 html {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: visible;
 }
 
 *::-webkit-scrollbar {
@@ -15,6 +16,9 @@ html {
 $pink : #FD297B;
 $orange : #FF7555;
 $grey : #979898;
+
+// Import Style for Login card
+@import 'loginCard';
 
 .header {
     background-image: url('asset/banner-img.png');

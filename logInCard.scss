@@ -1,0 +1,131 @@
+$pink : #FD297B;
+$orange : #FF7555;
+
+.log-card {
+    min-width: 400px;
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 1em 2em;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(.7);
+    opacity: 0;
+    transition: transform .5s, opacity .5s;
+}
+
+.dark-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(#000,0);
+    transition: background-color .5s;
+    z-index: -999;
+}
+
+.dark-bg-active {
+    background-color: rgba(#000,.7);
+    transition: background-color .5s;
+    z-index: 9998;
+}
+
+.log-card-active {
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.log-card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card-top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-middle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-bottom {
+    text-align: center;
+    width: 100%;
+}
+
+.card-bottom hr {
+    margin: 2em 0;
+}
+
+.top-item {
+    margin: .5em 0;
+    font-size: 1rem;
+}
+
+.top-item:nth-child(2){
+    font-style: italic;
+}
+
+.top-item:last-child {
+    margin-bottom: 2em;
+}
+
+.btn-social-media {
+    margin: .7em 0;
+    font-size: 1rem;
+    border-radius: 1em;
+    font-size: .9rem !important;
+    padding: 1.2em 2em !important;
+    background-color: white ;
+}
+
+.btn-social-media:hover {
+    background-image: linear-gradient(to bottom, rgba($pink,1),rgba($orange,1));
+    color: white;
+}
+
+.btn-social-media:last-child {
+    margin-bottom: 2em;
+}
+
+.getApp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.getApp span{
+    font-style: italic;
+    margin-bottom: 1.5em;
+}
+
+.getApp .btn-partner {
+    width: 150px;
+    border-radius: 25px;
+    background-color: white;
+}
+
